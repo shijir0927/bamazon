@@ -28,7 +28,8 @@ const checkInventory = (itemID, inventory) => {
 const makePurchase = (product, quantity) => {
     connection.query("UPDATE products SET stock_quantity = stock_quantity - ? WHERE item_id = ?", [quantity, product.item_id], function(err, res) {
         if (err) throw err;
-        console.log("Successfully purchased " + quantity + "," + product.product_name);
+        console.log("Successfully purchased " + quantity + " " + product.product_name);
+        loadProduct();
     })
 }
 
@@ -36,7 +37,7 @@ const promptCustomerForQuantity = (product) => {
     inquirer.prompt([{
         type: "input",
         name: "quantity",
-        message: "How many animals do you want[Quit with Q]",
+        message: "How many items do you want[Quit with Q]",
         validate: function(val) {
             return val > 0 || val.toLowerCase() === 'q'
         }
