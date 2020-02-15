@@ -84,7 +84,7 @@ const addNewProduct = () => {
     {
       type: "input",
       name: "price",
-      message: "Please enter the product price:"
+      message: "Please enter the product price: "
     },
     {
       type: "input",
