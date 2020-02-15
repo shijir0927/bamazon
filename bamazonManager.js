@@ -114,7 +114,7 @@ const promtManager = () => {
     ])
     .then(function(val) {
       if (val.choice === "q" || val.choice === "Q") {
-        console.log("Goodbye!");
+        console.log("Good bye!");
         process.exit(0);
       }
 
