@@ -159,7 +159,7 @@ const promtManager = () => {
         addNewProduct();
         // promtManager()
       } else {
-        console.log("Please enter a valid input!");
+        console.log("Please enter a valid input! ");
         // promtManager();
       }
     });
