@@ -141,7 +141,7 @@ const promtManager = () => {
           break;
 
         default:
-          console.log("Invalid input!");
+          console.log("Invalid input! ");
           promtManager();
           break;
       }
