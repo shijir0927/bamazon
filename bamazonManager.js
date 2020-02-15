@@ -79,7 +79,7 @@ const addNewProduct = () => {
     {
       type: "input",
       name: "department_name",
-      message: "Please enter the department name:"
+      message: "Please enter the department name: "
     },
     {
       type: "input",
@@ -89,7 +89,7 @@ const addNewProduct = () => {
     {
       type: "input",
       name: "stock_quantity",
-      message: "Please enter the product quantity:"
+      message: "Please enter the product quantity: "
     }
   ];
 
